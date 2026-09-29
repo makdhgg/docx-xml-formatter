@@ -34,16 +34,3 @@
 1. **`gui_helper.py` (Model):** Отвечает за распаковку ZIP, парсинг XML и построение "карты" документа (список абзацев и прогонов со ссылками на оригинальные lxml-элементы).
 2. **`formatter.py` (Engine):** Инкапсулирует всю работу с XML-деревом. Содержит методы двух типов: `change_*` (глобальные) и `apply_*` (точечные).
 3. **`app.py` (View/Controller):** UI на базе `CustomTkinter`. Обрабатывает пользовательский ввод и делегирует работу движку.
-
-🛠 Установка и запуск
-
-1. Клонируйте репозиторий:
-   ```bash
-   git clone https://github.com/ник/docx-xml-formatter.git
-   cd docx-xml-formatter
-2. Создайте виртуальное окружение и активируйте его:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # Для Windows: venv\Scripts\activate
-3. pip install -r requirements.txt
-4. python app.py
